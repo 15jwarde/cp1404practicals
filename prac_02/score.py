@@ -7,6 +7,7 @@ import random
 
 
 def main():
+    """Use a users and a random score to allocate a result."""
     score = float(input("Enter score: "))
     while score < 0 or score > 100:
         print("Invalid score")
@@ -17,6 +18,7 @@ def main():
 
 
 def get_result(number):
+    """Allocate a result to a score."""
     if number < 50:
         return "Bad"
     elif number < 90:
