@@ -7,6 +7,7 @@ FILENAME = "subject_data.txt"
 
 
 def main():
+    """Reformat and display data from subject_data.txt file."""
     data = get_data()
     print(data)
     display_subject_details(data)
@@ -31,6 +32,7 @@ def get_data():
 
 
 def display_subject_details(data):
+    """Display the subject code, teacher and amount of students."""
     input_file = open(FILENAME)
     for subject in data:
         print(f"{subject[0]} is taught by {subject[1]:12} and has {subject[2]:3} students.")
