@@ -1,3 +1,9 @@
+"""
+Word Occurrences
+Estimate: 30 minutes
+Actual:   40 minutes  # Estimate as I forgot to record my time on the second day of working on this.
+"""
+
 def main():
     """Get users name and email."""
     email_to_name = {}
