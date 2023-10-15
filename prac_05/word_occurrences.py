@@ -1,7 +1,7 @@
 """
 Word Occurrences
 Estimate: 20 minutes
-Actual:   27 minutes
+Actual:   33 minutes
 """
 
 word_to_count = {}
@@ -12,10 +12,7 @@ for word in text:
     except KeyError:
         word_to_count[word] = 1
 
-longest_word = -1
-# for word in word_to_count:
 
+max_length = max((len(word) for word in word_to_count))
 for word, count in sorted(word_to_count.items()):
-    print(f"{word}: {count}")
-
-# TODO: add column formatting
+    print(f"{word:{max_length}}: {count}")
