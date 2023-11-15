@@ -2,6 +2,7 @@ from prac_06.guitar import Guitar
 
 
 def run_tests():
+    """Test Guitar class."""
     guitar_1 = Guitar("Gibson L-5 CES", 1922, 16035.40)
     guitar_2 = Guitar("Line 6 JTV-59", 2010, 1512.90)
 
